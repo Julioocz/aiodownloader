@@ -167,7 +167,6 @@ if __name__ == '__main__':
     import os
     async def downlaod_async():
         async with aiohttp.ClientSession() as sess:
-            downloader = Handler(sync=False)
             link = "https://github.com/julionav/aiodownloader/raw/master/giphy.gif"
             name = "yes_thank_you.gif"
             job = DownloadJob(sess, link, name, os.getcwd())
